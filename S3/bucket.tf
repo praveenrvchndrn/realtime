@@ -9,15 +9,15 @@ resource "aws_s3_bucket_versioning" "s3_bucket" {
     status = "Enabled"
   }
 }
-*/
+
 resource "aws_dynamodb_table" "lock_file" {
-  name         = "lock-files"
+  name         = "tlock-files"
   billing_mode = "PAY_PER_REQUEST"   # ← all caps
   hash_key     = "LockID"
 
   attribute {                        # ← required block
-    name = "LockID"
+    name = "LockID12"
     type = "S"
   }
 }
-*/
+
