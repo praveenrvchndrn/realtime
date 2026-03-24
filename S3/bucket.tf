@@ -9,7 +9,7 @@ resource "aws_s3_bucket_versioning" "s3_bucket" {
     status = "Enabled"
   }
 }
-
+*/
 resource "aws_dynamodb_table" "lock_file" {
   name         = "lock-files"
   billing_mode = "PAY_PER_REQUEST"   # ← all caps
@@ -20,3 +20,4 @@ resource "aws_dynamodb_table" "lock_file" {
     type = "S"
   }
 }
+/*
