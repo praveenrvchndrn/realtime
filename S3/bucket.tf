@@ -20,4 +20,4 @@ resource "aws_dynamodb_table" "lock_file" {
     type = "S"
   }
 }
-/*
+*/
