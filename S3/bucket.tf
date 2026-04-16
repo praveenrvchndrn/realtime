@@ -16,7 +16,7 @@ resource "aws_dynamodb_table" "lock_file" {
   hash_key     = "LockID"
 
   attribute {                        # ← required block
-    name = "LockID12"
+    name = "LockID"
     type = "S"
   }
 }
