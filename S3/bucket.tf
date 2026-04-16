@@ -11,7 +11,7 @@ resource "aws_s3_bucket_versioning" "s3_bucket" {
 }
 
 resource "aws_dynamodb_table" "lock_file" {
-  name         = "tlock-files"
+  name         = "lock-files"
   billing_mode = "PAY_PER_REQUEST"   # ← all caps
   hash_key     = "LockID"
 
